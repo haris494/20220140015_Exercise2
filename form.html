@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Boy and the Heron Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>The Boy and the Heron Survey</h1>
+    <form id="form">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="age">Age</label>
+            <input type="number" id="age" name="age" required>
+        </div>
+
+        <div class="form-group">
+            <label for="favorite-character">Favorite Character</label>
+            <input type="text" id="favorite-character" name="favorite-character" required>
+        </div>
+
+        <div class="form-group">
+            <label for="experience">Experience with "The Boy and the Heron"</label>
+            <textarea id="experience" name="experience" rows="3" required></textarea>
+        </div>
+
+        <div class="form-group">
+            <label>Rate the Animation</label>
+            <div>
+                <input type="radio" id="rating-excellent" name="rating" value="Excellent" required>
+                <label for="rating-excellent">Excellent</label>
+            </div>
+            <div>
+                <input type="radio" id="rating-good" name="rating" value="Good">
+                <label for="rating-good">Good</label>
+            </div>
+            <div>
+                <input type="radio" id="rating-average" name="rating" value="Average">
+                <label for="rating-average">Average</label>
+            </div>
+            <div>
+                <input type="radio" id="rating-below-average" name="rating" value="Below Average">
+                <label for="rating-below-average">Below Average</label>
+            </div>
+        </div>
+
+        <button type="submit" class="submit-button">Submit</button>
+    </form>
+
+    <div id="result" class="result" style="display: none;">
+        <h2>Survey Results</h2>
+        <p><strong>Name:</strong> <span id="result-name"></span></p>
+        <p><strong>Email:</strong> <span id="result-email"></span></p>
+        <p><strong>Age:</strong> <span id="result-age"></span></p>
+        <p><strong>Favorite Character:</strong> <span id="result-favorite-character"></span></p>
+        <p><strong>Experience:</strong> <span id="result-experience"></span></p>
+        <p><strong>Rating:</strong> <span id="result-rating"></span></p>
+    </div>
+</div>
+
+<script>
+    const form = document.getElementById('form');
+    form.addEventListener('submit', function(event) {
+        event.preventDefault();
+        document.getElementById('result-name').textContent = form.name.value;
+        document.getElementById('result-email').textContent = form.email.value;
+        document.getElementById('result-age').textContent = form.age.value;
+        document.getElementById('result-favorite-character').textContent = form['favorite-character'].value;
+        document.getElementById('result-experience').textContent = form.experience.value;
+        document.getElementById('result-rating').textContent = form.rating.value;
+        document.getElementById('result').style.display = 'block';
+    });
+</script>
+
+</body>
+</html>

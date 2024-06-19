@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f9f9f9;
+    /* Background Image */
+    background-image: url('WhatsApp Image 2024-06-19 at 17.14.20_d3be9d9f.jpg'); /* Ganti dengan URL gambar yang Anda inginkan */
+    background-size: cover; /* Menyesuaikan gambar agar menutupi seluruh background */
+    background-position: center; /* Posisi gambar di tengah */
+}
+
+.container {
+    width: 350px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Menambahkan opasitas putih untuk kontainer */
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.container h1 {
+    font-size: 28px;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.form-group input[type="radio"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+.form-group textarea {
+    resize: none;
+}
+
+.submit-button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+
+.result {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.result h2 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.result p {
+    margin: 5px 0;
+    color: #555;
+}

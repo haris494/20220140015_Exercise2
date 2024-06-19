@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f9f9f9;
+    /* Background Image */
+    background-image: url('WhatsApp Image 2024-06-19 at 17.10.16_9fd52302.jpg'); /* Ganti dengan URL gambar yang Anda inginkan */
+    background-size: cover; /* Menyesuaikan gambar agar menutupi seluruh background */
+    background-position: center; /* Posisi gambar di tengah */
+}
+
+.container {
+    width: 300px; /* Mengurangi lebar kontainer */
+    padding: 15px; /* Mengurangi padding untuk kontainer */
+    background-color: rgba(255, 255, 255, 0.9); /* Menambahkan opasitas putih untuk kontainer */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-height: 80vh; /* Batasi tinggi maksimum kontainer agar tidak terlalu panjang */
+    overflow-y: auto; /* Tambahkan overflow-y: auto untuk menampilkan scrollbar jika konten terlalu panjang */
+}
+
+.container h1 {
+    font-size: 24px; /* Mengurangi ukuran font judul */
+    margin-bottom: 20px; /* Mengurangi margin bawah judul */
+    color: #333;
+}
+
+.audio-control {
+    margin-bottom: 20px; /* Mengurangi margin bawah untuk kontrol audio */
+}
+
+.audio-control label {
+    display: block;
+    font-size: 16px; /* Mengurangi ukuran font label */
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.audio-control audio {
+    width: 100%;
+    margin-top: 8px; /* Mengurangi margin atas untuk audio player */
+}
+
+.audio-control p {
+    margin: 0;
+    font-size: 14px; /* Mengurangi ukuran font untuk teks deskripsi audio */
+    color: #777;
+}
+
+.video-container {
+    margin-bottom: 20px; /* Mengurangi margin bawah untuk container video */
+}
+
+.video-container video {
+    width: 100%; /* Menyesuaikan lebar video agar responsif */
+    border-radius: 8px;
+}
+
+.video-container p {
+    margin-top: 8px; /* Mengurangi margin atas untuk teks deskripsi video */
+    font-size: 14px; /* Mengurangi ukuran font untuk teks deskripsi video */
+    color: #777;
+}
+
+.image-container {
+    margin-bottom: 20px; /* Mengurangi margin bawah untuk container gambar */
+}
+
+.image-container img {
+    width: 100%;
+    height: auto; /* Menyesuaikan gambar agar responsif */
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.image-container p {
+    margin-top: 8px; /* Mengurangi margin atas untuk teks deskripsi gambar */
+    font-size: 14px; /* Mengurangi ukuran font untuk teks deskripsi gambar */
+    color: #777;
+}
+
+.survey-button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.survey-button:hover {
+    background-color: #0056b3;
+}
+
+.result {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.result h2 {
+    margin-bottom: 10px; /* Mengurangi margin bawah untuk judul hasil */
+    font-size: 20px; /* Mengurangi ukuran font untuk judul hasil */
+    color: #333;
+}
+
+.result p {
+    margin: 5px 0; /* Mengurangi margin untuk paragraf hasil */
+    font-size: 14px; /* Mengurangi ukuran font untuk paragraf hasil */
+    color: #555;
+}
